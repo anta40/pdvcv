@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style> 
+    body {
+        padding-bottom: 90px;
+    }
+    .container {
+        margin-top: 50px;
+    }
+    
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+        <form action="cetak.php" method="POST">
+            <div class="col-sm-12 text-center"> <h2> PROFILE </h2> </div>
+            <div class="col-sm-6"> 
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="CVname" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" name="CVtitle" class="form-control" >
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label> About Me </label>
+                    <textarea class="form-control" rows="5" name="CVabout"></textarea>
+                </div>
+            </div>
+
+            <!-- ###### EXPERIENCE ####### -->
+            <div class="col-sm-12 text-center"> <h2> WORK EXPERIENCE </h2> </div>
+            <div class="col-sm-6"> 
+                <div class="form-group">
+                    <label> Company Name </label>
+                    <input type="text" name="CVcompany" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Position</label>
+                    <input type="text" name="CVposition" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Period</label>
+                    <input type="text" name="CVperiod" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Name of Project</label>
+                    <input type="text" name="CVproject" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Project Responsibility </label>
+                    <input type="text" name="CVresponsibility" class="form-control">
+                </div>
+                <a href="#"> Add New Responsibility </a>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Tools </label>
+                    <input type="text" name="CVtools" class="form-control">
+                </div>
+                <a href="#"> Add New Tools </a>
+            </div>
+
+            <!-- ###### SKILLS ####### -->
+            <div class="col-sm-12 text-center"> <h2> SKILLS </h2> </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Professional Skills </label>
+                    <input type="text" name="CVprofSkills" class="form-control">
+                </div>
+                <a href="#"> Add New Professional Skills </a>
+            </div>
+            
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Personal Skills </label>
+                    <input type="text" name="CVpersonalSkills" class="form-control">
+                </div>
+                <a href="#"> Add New Personal Skills  </a>
+            </div>
+            <!-- tutup SKILLS -->
+
+
+            <!-- ###### EDUCATION ####### -->
+            <div class="col-sm-12 text-center"> <h2> EDUCATION </h2> </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Place to Learn</label>
+                    <input type="text" name="CVplace" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Major</label>
+                    <input type="text" name="CVmajor" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Period</label>
+                    <input type="text" name="CVeduperiod" class="form-control">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Education Description </label>
+                    <input type="text" name="CVedudesc" class="form-control">
+                </div>
+                <a href="#"> Add New Edcuation Description </a>
+            </div>
+
+
+
+
+            <div class="col-sm-12"> 
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
