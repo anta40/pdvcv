@@ -11,21 +11,33 @@ $PAbout = $_POST['PAbout'];
 
 // Project Experience 
 $PENameProject = $_POST['PENameProject'];
+$PEPosition = $_POST['PEPosition'];
 $PEPeriod = $_POST['PEPeriod'];
 $PEResponsibility = $_POST['PEResponsibility'];
 $PETools = $_POST['PETools'];
-$PEPosition = $_POST['PEPosition'];
+$PEstartYear = $_POST['PEstartYear'];
+$PEstartMonth = $_POST['PEstartMonth'];
+$PEendYear = $_POST['PEendYear'];
+$PEendMonth = $_POST['PEendMonth'];
 
 // Work Experience
 $WECompanyName = $_POST['WECompanyName'];
 $WEPosition = $_POST['WEPosition'];
 $WEPeriod = $_POST['WEPeriod'];
+$WEstartYear = $_POST['WEstartYear'];
+$WEstartMonth = $_POST['WEstartMonth'];
+$WEendYear = $_POST['WEendYear'];
+$WEendMonth = $_POST['WEendMonth'];
 
 //Education
 $ESchoolName = $_POST['ESchoolName'];
 $EMajor = $_POST['EMajor'];
 $EPeriod = $_POST['EPeriod'];
 $EDesc = $_POST['EDesc'];
+$EstartYear = $_POST['EstartYear'];
+$EstartMonth = $_POST['EstartMonth'];
+$EendYear = $_POST['EendYear'];
+$EendMonth = $_POST['EendMonth'];
 
 //Skills
 $SProSkills = $_POST['SProSkills'];
@@ -57,16 +69,19 @@ $html =
 			background-repeat: no-repeat;
 		}
 		.imgprofil, .titleName, .posisiName {
-			text-align: center;
+			text-align: left;
 		}
 		.fs-14 {
 			font-size: 14px;
 		}
 		.titleName {
+			margin-top: 50px;
 			line-height: -1px;
 		}
 		.posisiName {
 			line-height: -5px;
+			margin-top: -20px;
+			margin-bottom: 50px;
 		}
 		.spacing {
 			letter-spacing: 1px;
@@ -106,7 +121,7 @@ $html =
 	<body>
 		<img src="img/idstar_logo.jpg">
 
-		<div class="imgprofil"> <img src="img/profil.jpg"> </div>
+		<!-- <div class="imgprofil"> <img src="img/profil.jpg"> </div> -->
 		<div class="titleName"> <h1> '. $PFullName .'  </h1> </div>
 		<div class="posisiName"> <h4> '. $PTitle .' </h4> </div>
 
@@ -140,7 +155,7 @@ $html =
 	 		</tr>
 
 	 		<tr> 
-	 			<td> '. $PEPeriod .' </td> <!-- Period of Project -->
+	 			<td> '. $PEstartMonth .' '. $PEstartYear .' - '. $PEendMonth .' '. $PEendYear .' </td> <!-- Period of Project -->
 	 			<th> Project Responsibility </th>
 
 	 		</tr>
@@ -191,7 +206,7 @@ $html =
 	 		</tr>
 
 	 		<tr> 
-	 			<td> '. $WEPeriod .' </td>
+	 			<td> '. $WEstartMonth .' '. $WEstartYear .' - '. $WEendMonth .' '. $WEendYear .' </td>
 	 			<td> </td>
 
 	 		</tr>
@@ -213,7 +228,7 @@ $html =
 	 		</tr>
 
 	 		<tr>
-	 			<td> '. $EPeriod .' </td>
+	 			<td> '. $EstartMonth .' '. $EstartYear .' - '. $EendMonth .' '. $EendYear .' </td>
 	 			<td>
 	 				<ul>
 	 					<!-- ---- ## Repeat Education Description Here ## ---- -->
@@ -241,6 +256,10 @@ $html =
 	 	<table cellpadding="5">
 	 		<tr>
 	 			<th width="300"> Professional Skills </th>
+	 		</tr>
+
+	 		<tr> 
+	 			<th width="300"> </th>
 	 			<td> '. $SProSkills .' </td>
 	 			<td> <div class="progressbarCont"> <div class="progressbar1"> </div> </div> </td>
 	 		</tr>
@@ -252,6 +271,10 @@ $html =
 
 	 		<tr>
 	 			<th width="300"> Personal Skills </th>
+	 		</tr>
+
+	 		<tr>
+	 			<th width="300"> </th>
 	 			<td> '. $SPerSkills .' </td>
 	 			<td> <div class="progressbarCont"> <div class="progressbar1"> </div> </div> </td>
 	 		</tr>
